@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<form action="/Home/XSS" method="post">
+    <p>
+        <input type="text" name="message" value="" />
+    </p>
+    <p>
+        <input type="submit" name="submit" value="送出" />
+    </p>
+    <p>
+        @ViewBag.Message
+    </p>
+</form>
